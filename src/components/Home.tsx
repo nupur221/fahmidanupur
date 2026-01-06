@@ -49,12 +49,11 @@ const Home = () => {
                 <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">GitHub</span>
               </a>
             </div>
-
-            <div className="inline-block mt-4 sm:mt-6 mb-0 py-2 sm:py-2.5 px-4 sm:px-6 bg-[#487ae5] dark:bg-[#6ea6eb] text-white dark:text-gray-800 text-sm sm:text-base md:text-lg font-semibold rounded-lg shadow-[0_2px_8px_rgba(62,52,52,0.08)] border-2 border-blue-600/20 dark:border-blue-400/20 transition-all duration-200 hover:bg-blue-700 dark:hover:bg-blue-600 hover:border-blue-800/50 dark:hover:border-gray-700/50">
-              <a href="/Nupur_resume.pdf" target="_blank" rel="noopener noreferrer">
+             <div className="inline-block mt-4 sm:mt-6 mb-0 py-2 sm:py-2.5 px-4 sm:px-6 bg-[#487ae5] dark:bg-[#6ea6eb] text-white dark:text-gray-800 text-sm sm:text-base md:text-lg font-semibold rounded-lg shadow-[0_2px_8px_rgba(62,52,52,0.08)] border-2 border-blue-600/20 dark:border-blue-400/20 transition-all duration-200 hover:bg-blue-700 dark:hover:bg-blue-600 hover:border-blue-800/50 dark:hover:border-gray-700/50">
+              <a href="/Nupur_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 View Resume
               </a>
-            </div>
+             </div>      
           </div>
         </div>
       </div>
