@@ -83,7 +83,7 @@ const Skills = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full flex-1 bg-blue-50 dark:bg-slate-800 text-gray-800 dark:text-gray-200 rounded-xl p-8 shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
                     {skillCategories.map((category, index) => (
-                        <div key={index} className="bg-white dark:bg-[#0b1220] border border-gray-200 dark:border-zinc-800 rounded-sm p-8 hover:border-gray-300 dark:hover:border-zinc-700 transition-colors shadow-sm dark:shadow-none h-full flex flex-col">
+                        <div key={index} className="bg-white dark:bg-[#0b1220] border border-gray-200 dark:border-zinc-800 rounded-sm p-8 hover:border-blue-500 dark:hover:border-blue-500 transition-colors shadow-sm dark:shadow-none h-full flex flex-col">
                             <div className="flex items-start gap-4 mb-6">
                                 <div className="mt-1 bg-gray-50 dark:bg-zinc-900/50 p-2 rounded-lg">
                                     {category.icon}

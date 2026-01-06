@@ -24,7 +24,7 @@ const About = () => {
                     {/* Education and Activities Row */}
                     <div className="flex flex-col gap lg:flex-row gap-8 w-full justify-center items-stretch mt-12">
                         {/* Education */}
-                        <aside className="w-full flex-1 bg-blue-50 dark:bg-slate-800 text-gray-800 dark:text-gray-200 rounded-xl p-8 shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
+                        <aside className="w-full flex-1 bg-blue-50 dark:bg-slate-800 text-gray-800 dark:text-gray-200 rounded-xl p-8 shadow-[0_10px_25px_rgba(0,0,0,0.1)] border-2 border-transparent hover:border-blue-500 dark:hover:border-blue-500 transition-colors duration-300">
                             <div className="text-center mb-8">
                                 <h3 className="inline-block text-base sm:text-lg font-extrabold tracking-wide m-0 bg-blue-200 dark:bg-blue-900 text-blue-800 dark:text-blue-100 py-2 px-6 rounded-full shadow-sm">
                                     Education
@@ -36,7 +36,7 @@ const About = () => {
 
                                 {/* First Education Item */}
                                 <div className="mb-8 pl-6 relative">
-                                    <div className="absolute -left-4 top-0 w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center text-white">
+                                    <div className="absolute -left-4 top-0 w-8 h-8 bg-blue-800 rounded-full flex items-center justify-center text-white">
                                         <FaGraduationCap />
                                     </div>
                                     <div className="text-xs sm:text-sm font-bold mb-1">Bachelor of Science in Computer Science and Engineering</div>
@@ -69,7 +69,7 @@ const About = () => {
 
 
                         {/* Extra-Curricular Activities */}
-                        <aside className="w-full flex-1 bg-blue-50 dark:bg-slate-800 text-gray-800 dark:text-gray-200 rounded-xl p-8 shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
+                        <aside className="w-full flex-1 bg-blue-50 dark:bg-slate-800 text-gray-800 dark:text-gray-200 rounded-xl p-8 shadow-[0_10px_25px_rgba(0,0,0,0.1)] border-2 border-transparent hover:border-blue-500 dark:hover:border-blue-500 transition-colors duration-300">
                             <div className="text-center mb-8">
                                 <h3 className="inline-block text-base sm:text-lg font-extrabold tracking-wide m-0 bg-blue-200 dark:bg-blue-900 text-blue-800 dark:text-blue-100 py-2 px-6 rounded-full shadow-sm">
                                     Extra-Curricular Activities
@@ -81,12 +81,12 @@ const About = () => {
 
                                 {/* First Extra-Curricular Activities Item */}
                                 <div className="mb-8 pl-6 relative">
-                                    <div className="absolute -left-4 top-0 w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center text-white">
+                                    <div className="absolute -left-4 top-0 w-8 h-8 bg-blue-800 rounded-full flex items-center justify-center text-white">
                                         <FaTrophy />
                                     </div>
-                                    <div className="text-xs sm:text-sm font-bold mb-1">Former IEEE Executive Member</div>
-                                    <div className="text-xs text-gray-400">IEEE Computer Society Chapter GUB</div>
-                                    <div className="text-xs text-gray-400">2023 - 2024</div>
+                                    <div className="text-xs sm:text-sm font-bold mb-1">Programming and Development Sacretery </div>
+                                    <div className="text-xs text-gray-400">Green University Computer Club : GUCC</div>
+                                    <div className="text-xs text-gray-400">2024 - 2025</div>
                                 </div>
 
                                 {/* Second Extra-Curricular Activities Item */}
@@ -98,17 +98,15 @@ const About = () => {
                                     <div className="text-xs text-gray-400">Bangladesh Mathematical Olympiad</div>
                                     <div className="text-xs text-gray-400">2022 - 2025</div>
                                 </div>
-
                                 {/* Third Extra-Curricular Activities Item */}
                                 <div className="mb-0 pl-6 relative">
                                     <div className="absolute -left-4 top-0 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white">
                                         <FaTrophy />
                                     </div>
-                                    <div className="text-xs sm:text-sm font-bold mb-1">Programming and Development Sacretery </div>
-                                    <div className="text-xs text-gray-400">Green University Computer Club : GUCC</div>
-                                    <div className="text-xs text-gray-400">2024 - 2025</div>
+                                    <div className="text-xs sm:text-sm font-bold mb-1">Former IEEE Executive Member</div>
+                                    <div className="text-xs text-gray-400">IEEE Computer Society Chapter GUB</div>
+                                    <div className="text-xs text-gray-400">2023 - 2024</div>
                                 </div>
-
                             </div>
                         </aside>
                     </div>

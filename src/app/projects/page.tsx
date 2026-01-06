@@ -8,7 +8,7 @@ const Projects = () => {
             description: "An AI-powered system that analyzes CVs, evaluates skills, and ranks candidates for job suitability.",
             technologies: ["Next.js", "FastAPI", "PostgreSQL", "RAG", "OCR", "ML model integration for skill extraction"],
             image: "rzmi.png",
-            icon: <FaGraduationCap className="text-blue-400 text-3xl"/>,
+            icon: <FaGraduationCap className="text-blue-400 text-3xl" />,
             github: "https://github.com/nupur221/resume_analizer",
             live: "#"
         },
@@ -97,7 +97,7 @@ const Projects = () => {
                                     <div className="flex gap-3">
                                         <a href={project.github} className="flex items-center gap-2 px-3 py-2 text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors border border-gray-200 dark:border-zinc-700 rounded-sm hover:border-gray-400 dark:hover:border-zinc-500">
                                             <FaGithub size={18} />
-                                            <span className="text-xs font-medium"><i>GitHub_repo</i></span>
+                                            <span className="text-xs font-medium"><i>_repo</i></span>
                                         </a>
                                         <a href={project.live} className="flex items-center gap-2 px-3 py-2 text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors border border-gray-200 dark:border-zinc-700 rounded-sm hover:border-gray-400 dark:hover:border-zinc-500">
                                             <FaExternalLinkAlt size={16} />
