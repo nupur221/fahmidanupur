@@ -7,7 +7,7 @@ const Achievements = () => {
             title: "IDPC Spring 2024",
             description: "Secured the Best Female Team of Inter Department Programming Contest (IDPC) Spring 2024 at Green University of Bangladesh.",
             image: "idpc.jpg",
-             icon: <FaAward className="text-yellow-400 text-3xl" />,
+            icon: <FaAward className="text-yellow-400 text-3xl" />,
         },
         {
             title: "UIU IUPC 2025",
@@ -29,7 +29,7 @@ const Achievements = () => {
 
                 {/* Header */}
                 <div className="w-full flex-1 bg-blue-50 dark:bg-slate-800 text-gray-800 dark:text-gray-200 rounded-xl p-8 shadow-[0_10px_25px_rgba(0,0,0,0.1)] text-center mb-16 mt-16">
-                    <h2 className="inline-block bg-blue-200 dark:bg-blue-900 text-blue-800 dark:text-blue-100 py-2 px-6 rounded-full text-[2.2rem] xl:text-3xl lg:text-2xl md:text-2xl sm:text-2xl mb-6 text-center animate-[fadeInDown_1s_ease-out_0.9s_both] tracking-wide [text-shadow:2px_2px_4px_rgba(0,0,0,0.1)] dark:[text-shadow:2px_2px_4px_rgba(0,0,0,0.3)] font-bold">
+                    <h2 className="inline-block bg-blue-200 dark:bg-blue-900 text-blue-800 dark:text-blue-100 py-2 px-4 sm:px-6 rounded-full text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl mb-6 text-center animate-[fadeInDown_1s_ease-out_0.9s_both] tracking-wide [text-shadow:2px_2px_4px_rgba(0,0,0,0.1)] dark:[text-shadow:2px_2px_4px_rgba(0,0,0,0.3)] font-bold">
                         Achievements and Certificates
                     </h2>
                     <p className="text-lg xl:text-base lg:text-base md:text-base sm:text-sm font-semibold mb-8 animate-[fadeInUp_1s_ease-out_0.9s_both] tracking-wide text-center hover:translate-x-2.5 transition-transform duration-300 text-gray-600 dark:text-gray-300">
