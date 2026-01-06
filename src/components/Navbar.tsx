@@ -2,10 +2,12 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useTheme } from '../theme';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
   const { theme, toggleTheme } = useTheme();
 
   const handleThemeToggle = () => {
@@ -15,7 +17,7 @@ const Navbar = () => {
 
   const navItems = [
     { href: '/about', label: 'About' },
-     { href: '/projects', label: 'Projects' },
+    { href: '/projects', label: 'Projects' },
     { href: '/skills', label: 'Skills' },
     { href: '/achievements', label: 'Achievements' },
     { href: '/contact', label: 'Contact' },
@@ -34,15 +36,21 @@ const Navbar = () => {
 
           {/* Desktop Navigation - Hidden on mobile/tablet */}
           <div className="hidden lg:flex items-baseline gap-6 xl:gap-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-gray-600 dark:text-gray-300 py-3 px-4 xl:px-5 rounded-lg text-sm xl:text-base font-bold no-underline transition-all duration-300 border-2 border-transparent hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:border-blue-600 dark:hover:border-blue-400 hover:-translate-y-0.5 hover:shadow-[0_4px_8px_rgba(37,99,235,0.2)]"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`text-gray-600 dark:text-gray-300 py-3 px-4 xl:px-5 rounded-lg text-sm xl:text-base font-bold no-underline transition-all duration-300 border-2 border-transparent hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:border-blue-600 dark:hover:border-blue-400 hover:-translate-y-0.5 hover:shadow-[0_4px_8px_rgba(37,99,235,0.2)] ${isActive
+                    ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/10 border-blue-600 dark:border-blue-400 -translate-y-0.5 shadow-[0_4px_8px_rgba(37,99,235,0.2)]'
+                    : ''
+                    }`}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
 
             {/* Theme Toggle Button */}
             <button
@@ -107,16 +115,22 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="lg:hidden absolute top-24 left-0 right-0 bg-white dark:bg-gray-800 border-t-2 border-gray-200 dark:border-gray-700 shadow-lg z-40">
             <div className="py-4 px-4">
-              {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="block text-gray-600 dark:text-gray-300 py-3 px-4 rounded-lg text-base font-bold no-underline transition-all duration-300 border-2 border-transparent mb-2 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:border-blue-600 dark:hover:border-blue-400"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {navItems.map((item) => {
+                const isActive = pathname === item.href;
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`block text-gray-600 dark:text-gray-300 py-3 px-4 rounded-lg text-base font-bold no-underline transition-all duration-300 border-2 border-transparent mb-2 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/10 hover:border-blue-600 dark:hover:border-blue-400 ${isActive
+                        ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/10 border-blue-600 dark:border-blue-400'
+                        : ''
+                      }`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         )}
