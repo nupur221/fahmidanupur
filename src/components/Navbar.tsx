@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-24 w-full">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/home" className="text-2xl font-black text-black dark:text-white no-underline text-left transition-colors duration-300 ml-4 [text-shadow:2px_2px_4px_rgba(0,0,0,0.1)] dark:[text-shadow:2px_2px_4px_rgba(0,0,0,0.3)] hover:text-blue-600 dark:hover:text-blue-400 hover:scale-105">
+            <Link href="/" className="text-2xl font-black text-black dark:text-white no-underline text-left transition-colors duration-300 ml-4 [text-shadow:2px_2px_4px_rgba(0,0,0,0.1)] dark:[text-shadow:2px_2px_4px_rgba(0,0,0,0.3)] hover:text-blue-600 dark:hover:text-blue-400 hover:scale-105">
               Nupur
             </Link>
           </div>
