@@ -26,25 +26,20 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              (function() {
-                try {
-                  const theme = localStorage.getItem('theme');
-                  const root = document.documentElement;
-                  if (theme === 'light') {
-                    root.classList.remove('dark');
-                  } else if (theme === 'dark') {
-                    root.classList.add('dark');
-                  } else {
-                    root.classList.remove('dark');
-                    localStorage.setItem('theme', 'light');
-                  }
-                } catch (e) {
-                  document.documentElement.classList.remove('dark');
-                }
-              })();
-            `,
+                (function () {
+                  try {
+                    const theme = localStorage.getItem('theme');
+                    if (theme === 'dark') {
+                      document.documentElement.classList.add('dark');
+                    } else if (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                      document.documentElement.classList.add('dark');
+                    }
+                  } catch (_) {}
+                })();
+                `,
           }}
         />
+
         <ThemeProvider>
           <BackgroundBlobs />
           <Navbar />

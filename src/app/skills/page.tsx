@@ -70,7 +70,7 @@ const Skills = () => {
 
     return (
         <section id="skills" className="py-24 lg:py-20 md:py-16 sm:py-12 bg-gray-100 dark:bg-[#0b1220] min-h-screen flex items-center justify-center font-Times New Roman">
-            <div className="max-w-[90rem] w-full mx-auto px-4 sm:px-8 lg:px-12">
+            <div className="max-w-[140rem] w-full mx-auto px-4 sm:px-8 lg:px-12">
                 {/* Header */}
                 <div className="w-full flex-1 bg-blue-50 dark:bg-slate-800 text-gray-800 dark:text-gray-200 rounded-xl p-8 shadow-[0_10px_25px_rgba(0,0,0,0.1)] text-center mb-16 mt-16">
                     <h2 className="inline-block bg-blue-200 dark:bg-blue-900 text-blue-800 dark:text-blue-100 py-2 px-6 rounded-full text-[2.2rem] xl:text-3xl lg:text-2xl md:text-2xl sm:text-2xl mb-6 text-center animate-[fadeInDown_1s_ease-out_0.9s_both] tracking-wide [text-shadow:2px_2px_4px_rgba(0,0,0,0.1)] dark:[text-shadow:2px_2px_4px_rgba(0,0,0,0.3)] font-bold">
