@@ -25,7 +25,7 @@ const Achievements = () => {
 
     return (
         <section id="achievements" className="py-24 lg:py-20 md:py-16 sm:py-12 bg-gray-100 dark:bg-[#0b1220] min-h-screen flex items-center justify-center font-Times New Roman">
-            <div className="max-w-[90rem] w-full mx-auto px-4 sm:px-8 lg:px-12 ">
+            <div className="max-w-[140rem] w-full mx-auto px-4 sm:px-8 lg:px-12 ">
 
                 {/* Header */}
                 <div className="w-full flex-1 bg-blue-50 dark:bg-slate-800 text-gray-800 dark:text-gray-200 rounded-xl p-8 shadow-[0_10px_25px_rgba(0,0,0,0.1)] text-center mb-16 mt-16">
@@ -41,7 +41,7 @@ const Achievements = () => {
                     {achievements.map((item, index) => (
                         <div key={index} className="group bg-white dark:bg-[#0b1220] border border-gray-200 dark:border-zinc-800 rounded-sm overflow-hidden hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-300 shadow-sm dark:shadow-none hover:shadow-xl hover:-translate-y-2 flex flex-col">
                             {/* Image Section */}
-                            <div className="relative h-48 overflow-hidden">
+                            <div className="relative h-80 overflow-hidden">
                                 {item.image.endsWith('.pdf') ? (
                                     <iframe
                                         src={item.image}
