@@ -20,7 +20,7 @@ const Contact = () => {
 
                 <div className="flex flex-col lg:flex-row gap-8 items-center justify-center">
 
-                    <div className="flex-1 w-full max-w-xl flex flex-col gap-6 w-full flex-1 bg-blue-50 dark:bg-slate-800 text-gray-800 dark:text-gray-200 rounded-xl p-8 shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
+                    <div className="flex-1 w-full max-w-2xl flex flex-col gap-6 w-full flex-1 bg-blue-50 dark:bg-slate-800 text-gray-800 dark:text-gray-200 rounded-xl p-8 shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
                         {/* Get in Touch Card */}
                         <div className="bg-white dark:bg-[#0b1220] border border-gray-200 dark:border-zinc-800 p-8 rounded-sm text-center flex flex-col items-center justify-center h-64 hover:border-blue-500 dark:hover:border-blue-500 transition-colors shadow-sm dark:shadow-none">
                             <div className="bg-gray-900 dark:bg-white p-4 rounded-sm mb-4 ">
@@ -67,7 +67,7 @@ const Contact = () => {
                     </div>
 
                     {/* Right Side - Form */}
-                    <div className="flex-1 w-full max-w-xl bg-white dark:bg-[#0b1220] border border-gray-200 dark:border-zinc-800 p-8 rounded-sm hover:border-blue-500 dark:hover:border-blue-500 transition-colors h-full shadow-sm dark:shadow-none">
+                    <div className="flex-1 w-full max-w-2xl bg-white dark:bg-[#0b1220] border border-gray-200 dark:border-zinc-800 p-8 rounded-sm hover:border-blue-500 dark:hover:border-blue-500 transition-colors h-full shadow-sm dark:shadow-none">
                         <form className="flex flex-col gap-6 h-full justify-between w-full flex-1 bg-blue-50 dark:bg-slate-800 text-gray-800 dark:text-gray-200 rounded-xl p-8 shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
                             <div className="flex flex-col md:flex-row gap-6">
                                 <div className="flex-1">
