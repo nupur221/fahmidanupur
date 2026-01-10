@@ -3,10 +3,10 @@ import { FaGraduationCap, FaTrophy } from "react-icons/fa";
 const About = () => {
     return (
         <section id="about" className="py-24 lg:py-20 md:py-16 sm:py-12 bg-gray-100 dark:bg-[#0b1220] relative overflow-hidden min-h-screen flex items-center justify-center font-Times New Roman">
-            <div className="relative z-10 max-w-[80rem] w-full mx-auto px-8 sm:px-12 lg:px-16">
+            <div className="relative z-10 max-w-[140rem] w-full mx-auto px-8 sm:px-12 lg:px-16">
                 <div className="flex flex-col items-center w-full gap-12 pb-12 mt-16">
                     {/* Left: About Me */}
-                    <div className="flex-1 max-w-[50rem] animate-[slideInFromRight_1.2s_ease-out_0.6s_both] font-bold flex flex-col items-center">
+                    <div className="flex-1 max-w-[80rem] animate-[slideInFromRight_1.2s_ease-out_0.6s_both] font-bold flex flex-col items-center">
                         <h3 className="inline-block bg-blue-200 dark:bg-blue-900 text-blue-800 dark:text-blue-100 py-2 px-6 rounded-full text-[2.2rem] xl:text-3xl lg:text-2xl md:text-2xl sm:text-2xl mb-6 text-center animate-[fadeInDown_1s_ease-out_0.9s_both] tracking-wide [text-shadow:2px_2px_4px_rgba(0,0,0,0.1)] dark:[text-shadow:2px_2px_4px_rgba(0,0,0,0.3)]">
                             ABOUT ME
                         </h3>
