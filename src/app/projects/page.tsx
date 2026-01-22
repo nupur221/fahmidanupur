@@ -6,7 +6,7 @@ const Projects = () => {
         {
             title: "Resume Analyzer",
             description: "An AI-powered system that analyzes CVs, evaluates skills, and ranks candidates for job suitability.",
-            technologies: ["Next.js", "FastAPI", "PostgreSQL", "RAG", "OCR", "ML model integration for skill extraction"],
+            technologies: ["Next.js", "FastAPI", "PostgreSQL", "RAG", "OCR", "LangChain"],
             image: "rzmi.png",
             icon: <FaGraduationCap className="text-blue-400 text-3xl" />,
             github: "https://github.com/nupur221/resume_analizer",
@@ -23,11 +23,21 @@ const Projects = () => {
             live: "https://gucc.green.edu.bd/"
         },
         {
+            title: "B.Doc Analysis(Thesis Project)",
+            description: "An AI-powered system that analyzes Bank Documents and extract relevant information.",
+            technologies: ["Next.Js", "FastAPI", "YOLOv8", "OCR", "RAG", "OpenCV", "Supabase"],
+            image: "bdoc.png",
+            icon: <FaGraduationCap className="text-yellow-400 text-3xl" />,
+            github: "#",
+            githubText: "On Progress.....",
+            live: "#"
+        },
+           {
             title: "Chat Application",
             description: "A chat application built with Java Swing.",
             technologies: ["Java", "Java Swing", "MySQL"],
             image: "cap.png",
-            icon: <FaGraduationCap className="text-yellow-400 text-3xl" />,
+            icon: <FaGraduationCap className="text-red-400 text-3xl" />,
             github: "https://github.com/nupur221/OOP_Project-swing-",
             live: "#"
         }
