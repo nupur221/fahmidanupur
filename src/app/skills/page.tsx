@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCode, FaReact, FaDatabase, FaTools, FaCog, FaWrench, FaBrain, FaCodeBranch, FaRobot, FaDocker } from "react-icons/fa";
+import { FaCode, FaReact, FaDatabase, FaCog, FaBrain, FaCodeBranch, FaRobot } from "react-icons/fa";
 import { MdApi, MdBuild } from 'react-icons/md';
 
 const Skills = () => {
@@ -58,7 +58,7 @@ const Skills = () => {
             title: "Dev. Tools",
             description: "Tools that streamline development, testing, and delivery processes.",
             icon: <MdBuild className="text-orange-400 text-3xl" />,
-            skills: ["Postman", "Docker(basic)"]
+            skills: ["Postman", "EchoAPI", "Docker(basic)"]
         },
         {
             title: "Analytical Skills",
