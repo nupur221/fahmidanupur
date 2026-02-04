@@ -17,7 +17,7 @@ const Achievements = () => {
         },
         {
             title: "IAAC 2025",
-            description: "Participated in the Internal Astronomy and Astrophysics Competetion 2025.",
+            description: "Participated in the International Astronomy and Astrophysics Competition 2025.",
             image: "iaac.pdf",
             icon: <FaAward className="text-green-400 text-3xl" />,
         }

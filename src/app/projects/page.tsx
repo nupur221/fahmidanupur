@@ -53,7 +53,7 @@ const Projects = () => {
                         Featured Projects
                     </h2>
                     <p className="text-lg xl:text-base lg:text-base md:text-base sm:text-sm font-semibold mb-8 animate-[fadeInUp_1s_ease-out_0.9s_both] tracking-wide text-center hover:translate-x-2.5 transition-transform duration-300 text-gray-600 dark:text-gray-300">
-                        A collection of my recent work and side projects
+                        A collection of my recent work
                     </p>
                 </div>
 
